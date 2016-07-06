@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="572.0" prefWidth="946.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TemplateController">
+   <children>
+      <GridPane layoutX="52.0" layoutY="44.0" prefHeight="25.0" prefWidth="748.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="150.0" minWidth="10.0" prefWidth="111.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" onAction="#loadMojeInformacije" prefHeight="25.0" prefWidth="161.0" text="Moje Informacije" />
+            <Button mnemonicParsing="false" onAction="#loadPretragaApartmana" prefHeight="25.0" prefWidth="155.0" text="Pretraga Apartmana" GridPane.columnIndex="1" />
+            <Button mnemonicParsing="false" onAction="#loadRezervacije" prefHeight="25.0" prefWidth="152.0" text="Rezervacije" GridPane.columnIndex="2" />
+            <Button fx:id="MojiApartmani" mnemonicParsing="false" onAction="#loadMojiApartmani" prefHeight="25.0" prefWidth="155.0" text="Moji Apartmani" visible="false" GridPane.columnIndex="3" />
+            <Button fx:id="DodajApartman" mnemonicParsing="false" onAction="#loadDodajApartman" prefHeight="25.0" prefWidth="160.0" text="Dodaj apartman" visible="false" GridPane.columnIndex="4" />
+         </children>
+      </GridPane>
+      <Label id="infoLabel" fx:id="infoLabel" layoutX="397.0" layoutY="79.0" text="Moje Informacije">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Pane id="dynamicPane" fx:id="dynamicPane" layoutX="16.0" layoutY="109.0" prefHeight="450.0" prefWidth="911.0" />
+      <Button layoutX="856.0" layoutY="14.0" mnemonicParsing="false" onAction="#logout" prefHeight="30.0" prefWidth="80.0" text="Odjavi se" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane id="mainBoard" prefHeight="450.0" prefWidth="911.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RezervacijeController">
+   <children>
+      <TableView id="RezervacijeTable" fx:id="RezervacijeTable" layoutX="6.0" layoutY="14.0" prefHeight="385.0" prefWidth="900.0" />
+      <Button layoutX="418.0" layoutY="406.0" mnemonicParsing="false" onAction="#showDetails" prefHeight="30.0" prefWidth="75.0" text="Detaljnije" />
+   </children>
+</Pane>

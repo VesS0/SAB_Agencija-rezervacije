@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="450.0" prefWidth="911.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MojiApartmaniController">
+   <children>
+      <TableView id="MojiApartmaniTable" fx:id="MojiApartmaniTable" layoutX="6.0" layoutY="14.0" prefHeight="380.0" prefWidth="900.0" />
+      <Button layoutX="407.0" layoutY="406.0" mnemonicParsing="false" onAction="#IzmeniOdabraniApartman" prefHeight="30.0" prefWidth="98.0" text="Promeni" />
+   </children>
+</Pane>
